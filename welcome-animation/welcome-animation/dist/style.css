@@ -1,0 +1,60 @@
+.page {
+  height: 100vh;
+  width: 100vw;
+  background: #FF6700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-container .border {
+  animation: welcomeHeight 0.25s ease-in-out forwards;
+  width: 4px;
+  background-color: #fff;
+}
+.welcome-container .welcome,
+.welcome-container .logo-container {
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+.welcome-container .logo-container {
+  animation: welcomeLeft 1s ease-in-out 0.25s forwards;
+  text-indent: 1000px;
+}
+.welcome-container .welcome {
+  font-size: 50px;
+  color: #fff;
+  font-family: Helvetica;
+  animation: welcomeRight 1s ease-in-out 1s forwards;
+  text-indent: -1000px;
+}
+@keyframes welcomeLeft {
+  0% {
+    text-indent: 1000px;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+@keyframes welcomeRight {
+  0% {
+    text-indent: -1000px;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+@keyframes welcomeHeight {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 200px;
+  }
+}
