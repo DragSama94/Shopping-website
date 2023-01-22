@@ -1,3 +1,3 @@
 function load() {
-  window.location.href = "../../../ProjectNew/login-page/login-page/dist/index.html";
+  window.location.href = "../../login-page/login-page/dist/index.html";
 }
