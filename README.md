@@ -99,3 +99,34 @@ Add a license file if you want to make the repo open source (MIT, Apache 2.0, et
 
 I generated this README from the repository structure and the live demo page. If you want a README that includes line-by-line code explanations, function descriptions, or screenshots generated from the exact source files, paste the contents of `index.html`, `style.css`, and `script.js` here or grant read access, and I will update the README to include code-level documentation and sample screenshots.
 
+## Chatbot: Virtual Shopping Assistant
+
+This project includes a simple chat assistant that uses an LLM to answer user queries.
+
+### Files added
+- `netlify/functions/chat.js` - serverless function proxy to OpenAI
+- `includes/chat-widget.html` - chat widget HTML snippet
+- `assets/css/chat-widget.css` - chat widget styles
+- `assets/js/chat-widget.js` - chat frontend logic
+- `.env.example` - example environment variables
+
+### Setup (Netlify)
+1. In Netlify, create a new site from this repository.
+2. In Site Settings → Build & Deploy → Environment, add:
+   - `OPENAI_API_KEY` = your OpenAI API key
+   - (optional) `OPENAI_MODEL` = `gpt-4o-mini` or preferred model
+3. Build & deploy. The serverless function endpoint will be available at `/.netlify/functions/chat`.
+4. Ensure `includes/chat-widget.html` is included in your `index.html` (paste snippet before `</body>`).
+
+### Setup (Local with Express)
+1. `cd server`
+2. `npm install`
+3. Create `.env` with `OPENAI_API_KEY=sk-...`
+4. Run `node index.js`
+5. Update `assets/js/chat-widget.js` fetch URL to `http://localhost:3000/api/chat`.
+
+### Security
+- Never commit your OpenAI key to the repository.
+- For Netlify/Render/Vercel use environment variables in the dashboard.
+
+
