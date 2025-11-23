@@ -1,0 +1,14 @@
+/* assets/css/chat-widget.css - simple, responsive styles */
+#chat-widget { position: fixed; right: 20px; bottom: 20px; z-index: 9999; font-family: Arial, sans-serif; }
+#chat-toggle { background:#1a73e8; color:#fff; border: none; border-radius: 24px; padding: 12px 16px; cursor:pointer; box-shadow:0 4px 12px rgba(0,0,0,0.15); }
+#chat-panel { width:320px; max-width: calc(100vw - 40px); height:420px; display:none; flex-direction:column; border-radius:8px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.2); background:#fff; }
+#chat-header { background:#0b5394; color:#fff; padding:10px; display:flex; justify-content:space-between; align-items:center; }
+#chat-messages { padding:10px; flex:1; overflow:auto; background:#f7f7f7; }
+.message { margin-bottom:10px; display:block; }
+.message.user { text-align:right; }
+.message .bubble { display:inline-block; padding:8px 12px; border-radius:12px; max-width:85%; }
+.message.user .bubble { background:#1a73e8; color:#fff; }
+.message.bot .bubble { background:#fff; border:1px solid #e0e0e0; color:#111; }
+#chat-form { display:flex; gap:8px; padding:10px; border-top:1px solid #eee; background:#fff; }
+#chat-input { flex:1; padding:8px 10px; border-radius:6px; border:1px solid #ddd; }
+#chat-form button { background:#0b5394; color:#fff; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; }
