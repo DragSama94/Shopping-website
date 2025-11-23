@@ -99,8 +99,3 @@ Add a license file if you want to make the repo open source (MIT, Apache 2.0, et
 
 I generated this README from the repository structure and the live demo page. If you want a README that includes line-by-line code explanations, function descriptions, or screenshots generated from the exact source files, paste the contents of `index.html`, `style.css`, and `script.js` here or grant read access, and I will update the README to include code-level documentation and sample screenshots.
 
-
----
-
-**Created by:** ChatGPT — README generator
-
