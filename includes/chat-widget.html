@@ -1,0 +1,18 @@
+<!-- includes/chat-widget.html -->
+<div id="chat-widget">
+  <button id="chat-toggle" aria-label="Open chat">Chat</button>
+  <div id="chat-panel" aria-hidden="true">
+    <div id="chat-header">
+      <span>Shopping Assistant</span>
+      <button id="chat-close" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chat-messages" role="log" aria-live="polite"></div>
+    <form id="chat-form">
+      <input id="chat-input" type="text" placeholder="Ask about products, sizes, shipping..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<link rel="stylesheet" href="assets/css/chat-widget.css" />
+<script defer src="assets/js/chat-widget.js"></script>
